@@ -4,8 +4,15 @@ interface ThemeState {
   currentTheme: "light" | "dark";
 }
 
+const getInitialTheme = (): "light" | "dark" => {
+  if (typeof window !== "undefined") {
+    return (localStorage.getItem("theme") as "light" | "dark") || "light";
+  }
+  return "light";
+};
+
 const initialState: ThemeState = {
-  currentTheme: (localStorage.getItem("theme") as "light" | "dark") || "light",
+  currentTheme: getInitialTheme(),
 };
 
 export const themeSlice = createSlice({
@@ -14,7 +21,9 @@ export const themeSlice = createSlice({
   reducers: {
     toggleTheme: (state) => {
       state.currentTheme = state.currentTheme === "light" ? "dark" : "light";
-      localStorage.setItem("theme", state.currentTheme);
+      if (typeof window !== "undefined") {
+        localStorage.setItem("theme", state.currentTheme);
+      }
     },
   },
 });
