@@ -40,7 +40,7 @@ function App() {
       </div>
 
       <main className="flex-1 flex justify-center items-start pt-0 px-4">
-        <div className="relative z-20 w-full max-w-xl lg:max-w-2xl px-6 mt-6 md:mt-8 min-h-0">
+        <div className="relative z-20 w-full max-w-xl lg:max-w-2xl px-6 mt-6 md:-mt-20 min-h-0">
           <div className="bg-white dark:bg-very-dark-desaturated-blue rounded-lg shadow-2xl overflow-hidden">
             <TodoList />
             
