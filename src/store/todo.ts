@@ -9,7 +9,7 @@ interface TodoState {
 
 const initialState: TodoState = {
   todos: [{ id: 1, text: "Learn Redux", completed: false }],
-  counter: 1,
+  counter: 2,
   filter: "All",
 };
 
