@@ -23,7 +23,7 @@ export const TodoSlice = createSlice({
         text: action.payload.text,
         completed: false,
       });
-      state.counter++; //
+      state.counter++;
     },
     ToggleTodo: (state, action: PayloadAction<Pick<Todo, "id">>) => {
       let todo = state.todos.find((todo) => todo.id === action.payload.id);
