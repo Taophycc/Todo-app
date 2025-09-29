@@ -38,11 +38,11 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [https://taophycc.github.io/Todo-app](https://todo-app-taophyc.vercel.app)
+- Live Site URL: [Demo Link](https://todo-app-taophyc.vercel.app)
 
 ## My process
 
-### Built with
+### Built with 
 
 - [React](https://reactjs.org/) - JS library
 - [Redux](https://redux.js.org/) - State management
@@ -98,7 +98,7 @@ In the future, I would like to expand this project by:
 
 - Website - [Taofeek Kassim](https://github.com/taophycc)
 - Frontend Mentor - [@taophycc](https://www.frontendmentor.io/profile/taophycc)
-- Twitter - [@taophyc](https://www.x.com/taophyc_)
+- Twitter - [@taophyc_](https://www.x.com/taophyc_)
 
 ## License
 
